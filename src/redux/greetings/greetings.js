@@ -4,7 +4,7 @@ const GET_GREETING = 'hello-world-rails/greetings/GET_GREETING';
 const initialState = '';
 
 export const fetchGreeting = createAsyncThunk(GET_GREETING, async () => {
-  const data = await fetch('api/greetings');
+  const data = await fetch('http://localhost:3000/api/greetings');
   const response = await data.json();
   return response;
 });
