@@ -6,7 +6,7 @@ const initialState = '';
 export const fetchGreeting = createAsyncThunk(GET_GREETING, async () => {
   const data = await fetch('api/greetings');
   const response = await data.json();
-  console.log(response)
+  console.log(response);
   return response;
 });
 

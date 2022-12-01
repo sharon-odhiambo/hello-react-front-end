@@ -9,7 +9,7 @@ const Greeting = () => {
     dispatch(fetchGreeting());
   }, [dispatch]);
   const greeting = useSelector((state) => state);
-  console.log(greeting)
+  console.log(greeting);
   return (
     <p>{greeting.message}</p>
   );
